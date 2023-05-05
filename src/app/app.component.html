@@ -1,10 +1,21 @@
-<ion-app>
+<ion-app [class.dark-mode]="darkMode">
   <ion-split-pane contentId="main-content">
     <ion-menu contentId="main-content" type="overlay">
-      <ion-content>
+      <ion-content >
         <ion-list id="inbox-list">
           <ion-list-header>Menu</ion-list-header>
           <ion-note>andersondesigner3d@hotmail.com</ion-note>
+          
+          <ion-buttons slot="end">
+            <ion-button (click)="toggleDarkMode()">
+              <ion-icon [name]="darkMode ? 'moon' : 'sunny'"></ion-icon>
+              <ion-label>
+                {{ darkMode ? 'Darkmode' : 'Lightmode' }}
+              </ion-label>
+            </ion-button>
+          </ion-buttons>
+
+          <div class="linha-horizontal"></div>
 
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
