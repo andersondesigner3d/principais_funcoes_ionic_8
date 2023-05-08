@@ -18,8 +18,9 @@ export class AppComponent{
     { title: 'Cards', url: '/cards', icon: 'cube' },
     { title: 'Checkbox', url: '/checkbox', icon: 'cube' },
     { title: 'Chip', url: '/chip', icon: 'cube' },
+    { title: 'Content Scrollable', url: '/content', icon: 'cube' },
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders']; 
+  
   
   darkMode = false;
 
