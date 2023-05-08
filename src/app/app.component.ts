@@ -1,4 +1,6 @@
 import { Component  } from '@angular/core';
+import { Storage } from '@ionic/storage-angular';
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -21,11 +23,23 @@ export class AppComponent{
   
   darkMode = false;
 
-  constructor() {    
+  constructor(private storage: Storage) {
+  }
+
+  async ngOnInit() {
+    // cria o storage e le o que está salvo no darkmode
+    await this.storage.create();
+    if(this.storage){
+        this.storage.get('darkmode').then((valor) => {
+          this.darkMode = valor;
+        });
+    }
   }
 
   toggleDarkMode() {
+    //troca o valor do darkmode e salva na memoria
     this.darkMode = !this.darkMode;
+    this.storage.set('darkmode', this.darkMode);
   }
 
 }
