@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Datetime</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class='ion-padding'>
+  <p>Uso básico:</p>
+  <ion-datetime>
+    <span slot="title">Selecione a data da reserva:</span>
+  </ion-datetime>
+  <div class="linha-horizontal"></div>
+  <p>Com uso do datetime button</p>
+  <ion-datetime-button datetime="datetime"></ion-datetime-button>
+
+  <ion-modal [keepContentsMounted]="true">
+    <ng-template>
+      <ion-datetime id="datetime"></ion-datetime>
+    </ng-template>
+  </ion-modal>
+  <div class="linha-horizontal"></div>
+  <p>Datas máximas e mínimas:</p>
+  <ion-datetime value="2022-04-21T00:00:00" min="2022-03-01T00:00:00" max="2022-05-31T23:59:59"></ion-datetime>
+  <div class="linha-horizontal"></div>
+  <p>Selecionando valores específicos:</p>
+  <ion-datetime minuteValues="0,15,30,45" dayValues="5,10,15,20,25,30"></ion-datetime>
+  <div class="linha-horizontal"></div>
+  <p>Restrições de datas avançadas: Exceto sábados e domingos.</p>
+  <ion-datetime [isDateEnabled]="isWeekday"></ion-datetime>
+  <div class="linha-horizontal"></div>
+  <p>Localização Geográfica do datetime:</p>
+  <ion-datetime locale="es-ES">
+    <span slot="time-label">Tiempo</span>
+  </ion-datetime>
+  <div class="linha-horizontal"></div>
+  <p>Ciclo da hora 12h/24h:</p>
+  <ion-datetime locale="en-GB" hourCycle="h12"></ion-datetime>
+  <div class="linha-horizontal"></div>
+  <p>Primeiro dia da semana:</p>
+  <ion-datetime [firstDayOfWeek]="1">
+    <span slot="time-label">Horário</span>
+  </ion-datetime>
+  <div class="linha-horizontal"></div>
+  <p>Mês e ano somente:</p>
+  <ion-datetime presentation="month-year"></ion-datetime>
+  <div class="linha-horizontal"></div>
+  <p>Seleção do tempo:</p>
+  <ion-datetime presentation="time"></ion-datetime>
+  <div class="linha-horizontal"></div>
+  <p>Somente data:</p>
+  <ion-datetime presentation="date"></ion-datetime>
+  <div class="linha-horizontal"></div>
+  <p>Roda de dados temporais:</p>
+  <ion-datetime presentation="date-time" [preferWheel]="true"></ion-datetime>
+  <div class="linha-horizontal"></div>
+</ion-content>

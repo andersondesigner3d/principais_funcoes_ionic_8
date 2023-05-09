@@ -19,6 +19,7 @@ export class AppComponent{
     { title: 'Checkbox', url: '/checkbox', icon: 'cube' },
     { title: 'Chip', url: '/chip', icon: 'cube' },
     { title: 'Content Scrollable', url: '/content', icon: 'cube' },
+    { title: 'Datetime', url: '/datetime', icon: 'cube' },
   ];
   
   

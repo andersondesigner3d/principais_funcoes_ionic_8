@@ -29,3 +29,26 @@
     border-top: 1px solid black;
     margin: 10px 0;
 }
+
+.calendar-day-active {
+  color: red;
+}
+
+.dark-mode {
+    // suas propriedades dark-mode aqui
+    .linha-horizontal {
+      border-top: 1px solid white;
+    }
+
+    ion-datetime {
+      color: var(--ion-color-light) !important;
+    }
+
+    
+}
+
+
+
+
+
+
