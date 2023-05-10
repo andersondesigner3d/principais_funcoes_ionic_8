@@ -20,6 +20,8 @@ export class AppComponent{
     { title: 'Chip', url: '/chip', icon: 'cube' },
     { title: 'Content Scrollable', url: '/content', icon: 'cube' },
     { title: 'Datetime', url: '/datetime', icon: 'cube' },
+    { title: 'Ionfab', url: '/ionfab', icon: 'cube' },
+    { title: 'Grid Layout', url: '/grid', icon: 'cube' },
   ];
   
   

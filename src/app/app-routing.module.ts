@@ -53,6 +53,14 @@ const routes: Routes = [
   },  {
     path: 'datetime',
     loadChildren: () => import('./pages/datetime/datetime.module').then( m => m.DatetimePageModule)
+  },
+  {
+    path: 'ionfab',
+    loadChildren: () => import('./pages/ionfab/ionfab.module').then( m => m.IonfabPageModule)
+  },
+  {
+    path: 'grid',
+    loadChildren: () => import('./pages/grid/grid.module').then( m => m.GridPageModule)
   }
 
 ];
