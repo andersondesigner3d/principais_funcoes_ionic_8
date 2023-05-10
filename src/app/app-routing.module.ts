@@ -61,6 +61,14 @@ const routes: Routes = [
   {
     path: 'grid',
     loadChildren: () => import('./pages/grid/grid.module').then( m => m.GridPageModule)
+  },
+  {
+    path: 'infinityscroller',
+    loadChildren: () => import('./pages/infinityscroller/infinityscroller.module').then( m => m.InfinityscrollerPageModule)
+  },
+  {
+    path: 'icons',
+    loadChildren: () => import('./pages/icons/icons.module').then( m => m.IconsPageModule)
   }
 
 ];
