@@ -24,6 +24,7 @@ export class AppComponent{
     { title: 'Grid Layout', url: '/grid', icon: 'cube' },
     { title: 'Infinity Scroller', url: '/infinityscroller', icon: 'cube' },
     { title: 'Ion Icon', url: '/icons', icon: 'cube' },
+    { title: 'Input', url: '/input', icon: 'cube' },
   ];
   
   

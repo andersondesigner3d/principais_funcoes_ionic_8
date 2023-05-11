@@ -69,6 +69,10 @@ const routes: Routes = [
   {
     path: 'icons',
     loadChildren: () => import('./pages/icons/icons.module').then( m => m.IconsPageModule)
+  },
+  {
+    path: 'input',
+    loadChildren: () => import('./pages/input/input.module').then( m => m.InputPageModule)
   }
 
 ];
