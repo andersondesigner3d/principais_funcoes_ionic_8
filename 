@@ -1,0 +1,85 @@
+[33mcommit 0b99042832cd0731adf7be06784f3b84110d8647[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/1-criando-alert[m[33m)[m
+Author: Anderson Rocha <32132934+andersondesigner3d@users.noreply.github.com>
+Date:   Thu May 11 16:55:45 2023 -0300
+
+    feita a pagina input
+
+[33mcommit c7ba2b1d51f4892f9d5ac242faac9ff196e5341a[m
+Author: Anderson Rocha <32132934+andersondesigner3d@users.noreply.github.com>
+Date:   Wed May 10 09:03:12 2023 -0300
+
+    feita a página infinity scroller e a pagina icons
+
+[33mcommit 9aab442f68f6363e8af8a12057282db6d3154cc1[m
+Author: Anderson Rocha <32132934+andersondesigner3d@users.noreply.github.com>
+Date:   Tue May 9 21:42:56 2023 -0300
+
+    feito a página ion-fab e a página grid layout
+
+[33mcommit 44d871832bd179c64aaad1cdfd57d6a34b787b4f[m
+Author: Anderson Rocha <32132934+andersondesigner3d@users.noreply.github.com>
+Date:   Mon May 8 22:11:08 2023 -0300
+
+    feita a página datetime
+
+[33mcommit 9174af48bb7755e5bbee5dd36ec9e0c4f0f5a0ff[m
+Author: Anderson Rocha <32132934+andersondesigner3d@users.noreply.github.com>
+Date:   Mon May 8 12:33:30 2023 -0300
+
+    feito o content scrollable
+
+[33mcommit fdd7c0cbfd8b1e3b7775d3f4e0c45d172a0d3674[m
+Author: Anderson Rocha <32132934+andersondesigner3d@users.noreply.github.com>
+Date:   Mon May 8 11:52:01 2023 -0300
+
+    feito o storage salvar o darkmode
+    
+    agora quando vc muda pro darkmode a ação é salva na memoria do sistema
+
+[33mcommit 2b491480c0a7b6008a7b4aed132379f307906bf1[m
+Author: ANDERSON DE ARAUJO ROCHA <04898487459@sesed.interno>
+Date:   Fri May 5 13:19:59 2023 -0300
+
+    feito o botão de lightmode e darkmode
+
+[33mcommit b1aa6d06f22bed2ea4cab124a4989c1f33a4f340[m
+Author: ANDERSON DE ARAUJO ROCHA <04898487459@sesed.interno>
+Date:   Wed May 3 12:50:41 2023 -0300
+
+    feito checkbox com ngmodel de captura pelo log
+
+[33mcommit 8c7455c1aee11c0cf948c9c8c86ed85431add82a[m
+Author: ANDERSON DE ARAUJO ROCHA <04898487459@sesed.interno>
+Date:   Fri Apr 28 14:54:09 2023 -0300
+
+    feito badge, breadcrumb, button e card
+
+[33mcommit c69e3eeee75f94d898a4a33d7d850bb9a7249530[m
+Author: ANDERSON DE ARAUJO ROCHA <04898487459@sesed.interno>
+Date:   Thu Apr 27 16:49:00 2023 -0300
+
+    Feita a página do alert
+
+[33mcommit 9f25c27772d5b790e6358ade06caea710f09a789[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: ANDERSON DE ARAUJO ROCHA <04898487459@sesed.interno>
+Date:   Thu Apr 27 16:06:58 2023 -0300
+
+    Feita a página do accordion
+
+[33mcommit 6c86ce821b47f6545df51980680b3fd517af8c5e[m
+Author: ANDERSON DE ARAUJO ROCHA <04898487459@sesed.interno>
+Date:   Thu Apr 27 15:27:03 2023 -0300
+
+    feito action sheet abrir e mostrar mensagens no console.log
+
+[33mcommit 215d8e896bd03cee5fb7e8b51374746b7c52484c[m
+Author: ANDERSON DE ARAUJO ROCHA <04898487459@sesed.interno>
+Date:   Thu Apr 27 14:02:12 2023 -0300
+
+    primeiro commit
+
+[33mcommit 620c8a17f993df83f98f4fc5d843c23d47a33b7d[m
+Author: ANDERSON DE ARAUJO ROCHA <04898487459@sesed.interno>
+Date:   Mon Apr 24 09:52:09 2023 -0300
+
+    Initial commit

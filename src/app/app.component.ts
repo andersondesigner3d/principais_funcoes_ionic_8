@@ -27,6 +27,7 @@ export class AppComponent{
     { title: 'Input', url: '/input', icon: 'cube' },
     { title: 'Ion Item', url: '/item', icon: 'cube' },
     { title: 'Ion List', url: '/list', icon: 'cube' },
+    { title: 'Media', url: '/media', icon: 'cube' },
   ];
   
   
