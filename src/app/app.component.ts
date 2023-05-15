@@ -28,10 +28,12 @@ export class AppComponent{
     { title: 'Ion Item', url: '/item', icon: 'cube' },
     { title: 'Ion List', url: '/list', icon: 'cube' },
     { title: 'Media', url: '/media', icon: 'cube' },
+    { title: 'Menu', url: '/menu', icon: 'cube' },
   ];
   
   
   darkMode = false;
+  public menuType: string = 'overlay';
 
   constructor(private storage: Storage) {
   }

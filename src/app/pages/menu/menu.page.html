@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Menu</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class='ion-padding' >
+
+  <h2>Selecione como o menu principal será aberto:</h2>
+    <ion-radio-group (ionChange)="capturarValor()" [(ngModel)]="menuType2">
+      <ion-item>
+        <ion-label>
+          <code>overlay</code>
+        </ion-label>
+        <ion-radio value="overlay" ></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <code>reveal</code>
+        </ion-label>
+        <ion-radio value="reveal" ></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <code>push</code>
+        </ion-label>
+        <ion-radio value="push" ></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  
+</ion-content>

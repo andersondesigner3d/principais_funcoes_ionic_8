@@ -85,6 +85,10 @@ const routes: Routes = [
   {
     path: 'media',
     loadChildren: () => import('./pages/media/media.module').then( m => m.MediaPageModule)
+  },
+  {
+    path: 'menu',
+    loadChildren: () => import('./pages/menu/menu.module').then( m => m.MenuPageModule)
   }
 
 ];
