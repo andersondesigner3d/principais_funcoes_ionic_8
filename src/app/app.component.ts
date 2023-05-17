@@ -32,6 +32,7 @@ export class AppComponent{
     { title: 'Modal', url: '/modal', icon: 'cube' },
     { title: 'Navigation', url: '/navigation', icon: 'cube' },
     { title: 'Popover', url: '/popover', icon: 'cube' },
+    { title: 'Loading e Spinners', url: '/loading', icon: 'cube' },
   ];
   
   
