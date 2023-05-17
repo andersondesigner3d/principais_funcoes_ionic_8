@@ -29,6 +29,7 @@ export class AppComponent{
     { title: 'Ion List', url: '/list', icon: 'cube' },
     { title: 'Media', url: '/media', icon: 'cube' },
     { title: 'Menu', url: '/menu', icon: 'cube' },
+    { title: 'Modal', url: '/modal', icon: 'cube' },
   ];
   
   
