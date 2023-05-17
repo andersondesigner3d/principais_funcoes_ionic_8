@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Navigation 1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class='ion-padding' >
+  <p>Navigation 1:</p>
+  <ion-item>
+    <ion-label>Texto:</ion-label>
+    <ion-input [(ngModel)]="texto"></ion-input>
+  </ion-item>
+  <ion-button expand="full" routerLink="/navigation2" [queryParams]="{data: texto}">Ir para a Página 2</ion-button>
+</ion-content>

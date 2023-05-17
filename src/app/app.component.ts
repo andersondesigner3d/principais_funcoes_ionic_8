@@ -30,6 +30,7 @@ export class AppComponent{
     { title: 'Media', url: '/media', icon: 'cube' },
     { title: 'Menu', url: '/menu', icon: 'cube' },
     { title: 'Modal', url: '/modal', icon: 'cube' },
+    { title: 'Navigation', url: '/navigation', icon: 'cube' },
   ];
   
   

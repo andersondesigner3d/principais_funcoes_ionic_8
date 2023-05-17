@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/navigation"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Navigation 2</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class='ion-padding' >
+  <p>Navigation 2:</p>
+  <ion-label>Texto Recebido:</ion-label>
+  <p>{{ receivedText }}</p>
+  <ion-button expand="full" routerLink="/navigation">Ir para a Página 1</ion-button>
+</ion-content>
