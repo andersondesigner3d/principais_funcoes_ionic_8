@@ -31,6 +31,7 @@ export class AppComponent{
     { title: 'Menu', url: '/menu', icon: 'cube' },
     { title: 'Modal', url: '/modal', icon: 'cube' },
     { title: 'Navigation', url: '/navigation', icon: 'cube' },
+    { title: 'Popover', url: '/popover', icon: 'cube' },
   ];
   
   

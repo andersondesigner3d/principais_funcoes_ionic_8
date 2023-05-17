@@ -105,6 +105,10 @@ const routes: Routes = [
   {
     path: 'navigation3',
     loadChildren: () => import('./pages/navigation3/navigation3.module').then( m => m.Navigation3PageModule)
+  },
+  {
+    path: 'popover',
+    loadChildren: () => import('./pages/popover/popover.module').then( m => m.PopoverPageModule)
   }
 
 ];

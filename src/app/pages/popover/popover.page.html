@@ -1,0 +1,123 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Popover</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class='ion-padding' >
+  
+  <p>Triggers:</p>
+  <ion-button id="click-trigger">Left-Click Me</ion-button>
+<ion-popover trigger="click-trigger" triggerAction="click">
+  <ng-template>
+    <ion-content class="ion-padding">Hello World!</ion-content>
+  </ng-template>
+</ion-popover>
+
+<ion-button id="context-menu-trigger">Right-Click Me</ion-button>
+<ion-popover trigger="context-menu-trigger" triggerAction="context-menu">
+  <ng-template>
+    <ion-content class="ion-padding">Hello World!</ion-content>
+  </ng-template>
+</ion-popover>
+
+<ion-button id="hover-trigger">Hover Over Me In Desktop</ion-button>
+<ion-popover trigger="hover-trigger" triggerAction="hover">
+  <ng-template>
+    <ion-content class="ion-padding">Hello World!</ion-content>
+  </ng-template>
+</ion-popover>
+
+<div class="linha-horizontal"></div>
+
+<p>isOpen and dismiss Property:</p>
+<ion-button (click)="presentPopover($event)">Click Me</ion-button>
+<ion-popover #popover [isOpen]="isOpen" (didDismiss)="fecharPopover()">
+  <ng-template>
+    <ion-content class="ion-padding">Hello World!</ion-content>
+  </ng-template>
+</ion-popover>
+<p>{{texto}}</p>
+
+<div class="linha-horizontal"></div>
+
+<p>Side and Alignment Demo​:</p>
+<div class="container">
+  <ion-button id="top-center">Side=Top, Alignment=Center</ion-button>
+  <ion-popover trigger="top-center" side="top" alignment="center">
+    <ng-template>
+      <ion-content class="ion-padding">Hello World!</ion-content>
+    </ng-template>
+  </ion-popover>
+
+  <ion-button id="bottom-start">Side=Bottom, Alignment=Start</ion-button>
+  <ion-popover trigger="bottom-start" side="bottom" alignment="start">
+    <ng-template>
+      <ion-content class="ion-padding">Hello World!</ion-content>
+    </ng-template>
+  </ion-popover>
+
+  <ion-button id="left-start">Side=Left, Alignment=Start</ion-button>
+  <ion-popover trigger="left-start" side="left" alignment="start">
+    <ng-template>
+      <ion-content class="ion-padding">Hello World!</ion-content>
+    </ng-template>
+  </ion-popover>
+
+  <ion-button id="right-end">Side=Right, Alignment=End</ion-button>
+  <ion-popover trigger="right-end" side="right" alignment="end">
+    <ng-template>
+      <ion-content class="ion-padding">Hello World!</ion-content>
+    </ng-template>
+  </ion-popover>
+</div>
+
+  <div class="linha-horizontal"></div>
+
+  <p>Sizing:</p>
+  <ion-button id="auto-trigger">Size=Auto</ion-button>
+<ion-popover trigger="auto-trigger" size="auto">
+  <ng-template>
+    <ion-content class="ion-padding">Hello!</ion-content>
+  </ng-template>
+</ion-popover>
+
+<ion-button id="cover-trigger">Size=Cover</ion-button>
+<ion-popover trigger="cover-trigger" size="cover">
+  <ng-template>
+    <ion-content class="ion-padding">Hello!</ion-content>
+  </ng-template>
+</ion-popover>
+
+<div class="linha-horizontal"></div>
+
+<p>Menu popover:</p>
+<div class="container">
+  <ion-button id="popover-button">Open Menu</ion-button>
+  <ion-popover trigger="popover-button" [dismissOnSelect]="true" size="cover">
+    <ng-template>
+      <ion-content>
+        <ion-list>
+          <ion-item [button]="true" [detail]="false">Option 1</ion-item>
+          <ion-item [button]="true" [detail]="false">Option 2</ion-item>
+          <ion-item [button]="true" id="nested-trigger">More options...</ion-item>
+
+          <ion-popover size="cover" trigger="nested-trigger" [dismissOnSelect]="true" side="end">
+            <ng-template>
+              <ion-content>
+                <ion-list>
+                  <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                </ion-list>
+              </ion-content>
+            </ng-template>
+          </ion-popover>
+        </ion-list>
+      </ion-content>
+    </ng-template>
+  </ion-popover>
+</div>
+
+</ion-content>
