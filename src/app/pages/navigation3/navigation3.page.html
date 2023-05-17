@@ -3,17 +3,13 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/navigation"></ion-back-button>
     </ion-buttons>
-    <ion-title>Navigation 2</ion-title>
+    <ion-title>Navigation 3</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class='ion-padding' >
-  <p>Navigation 2:</p>
+  <p>Navigation 3:</p>
   <ion-label>Texto Recebido:</ion-label>
   <p>{{ receivedText }}</p>
-  <ion-item>
-    <ion-label>Texto:</ion-label>
-    <ion-input [(ngModel)]="texto"></ion-input>
-  </ion-item>
-  <ion-button expand="full" routerLink="/navigation3" [queryParams]="{data: texto}">Ir para a Página 3</ion-button>
+  <ion-button expand="full" routerLink="/navigation2">Ir para a Página 2</ion-button>
 </ion-content>
