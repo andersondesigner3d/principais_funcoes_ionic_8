@@ -9,18 +9,19 @@
 
 <ion-content class='ion-padding'>
   <p>Uso básico:</p>
-  <ion-datetime>
+  <ion-datetime [(ngModel)]="minhadata" (click)="clicou()">
     <span slot="title">Selecione a data da reserva:</span>
   </ion-datetime>
   <div class="linha-horizontal"></div>
   <p>Com uso do datetime button</p>
   <ion-datetime-button datetime="datetime"></ion-datetime-button>
 
-  <ion-modal [keepContentsMounted]="true">
+  <ion-modal [keepContentsMounted]="true" [isOpen]="false">
     <ng-template>
-      <ion-datetime id="datetime"></ion-datetime>
+      <ion-datetime id="datetime" [(ngModel)]="minhadata" (ionChange)="clicou()"></ion-datetime>
     </ng-template>
   </ion-modal>
+
   <div class="linha-horizontal"></div>
   <p>Datas máximas e mínimas:</p>
   <ion-datetime value="2022-04-21T00:00:00" min="2022-03-01T00:00:00" max="2022-05-31T23:59:59"></ion-datetime>

@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatetimePage implements OnInit {
 
+  minhadata !: string;
+  isModalOpen = false;
+
   constructor() { }
 
   ngOnInit() {
@@ -22,5 +25,14 @@ export class DatetimePage implements OnInit {
      */
     return utcDay !== 0 && utcDay !== 6;
   };
+
+  clicou(){
+    console.log(this.minhadata);
+  }
+
+  setOpen(isOpen: boolean) {
+    console.log(isOpen);
+    this.isModalOpen = isOpen;
+  }
 
 }

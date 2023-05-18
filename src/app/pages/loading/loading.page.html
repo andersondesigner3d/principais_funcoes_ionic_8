@@ -1,13 +1,33 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>loading</ion-title>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Loading e Spinners</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">loading</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class='ion-padding' >
+
+  <p>Inline:</p>
+  <ion-button id="open-loading">Show Loading</ion-button>
+  <ion-loading trigger="open-loading" message="Dismissing after 3 seconds..." duration="3000"></ion-loading>
+
+  <div class="linha-horizontal"></div>
+
+  <p>Controller</p>
+  <ion-button (click)="showLoading()">Show Loading and console.log</ion-button>
+
+  <div class="linha-horizontal"></div>
+
+  <p>Customização</p>
+  <ion-button id="open-loading2">Show Loading</ion-button>
+  <ion-loading trigger="open-loading2" message="Loading..." [duration]="3000" spinner="circles"></ion-loading>
+
+  <div class="linha-horizontal"></div>
+
+  <p>CSS</p>
+  <ion-button id="open-loading3">Show Loading</ion-button>
+<ion-loading class="custom-loading" trigger="open-loading3" message="Loading..." [duration]="3000"></ion-loading>
+
 </ion-content>
