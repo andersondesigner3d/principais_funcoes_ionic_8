@@ -33,6 +33,7 @@ export class AppComponent{
     { title: 'Navigation', url: '/navigation', icon: 'cube' },
     { title: 'Popover', url: '/popover', icon: 'cube' },
     { title: 'Loading e Spinners', url: '/loading', icon: 'cube' },
+    { title: 'Radio', url: '/radio', icon: 'cube' },
   ];
   
   
