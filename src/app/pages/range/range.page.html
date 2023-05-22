@@ -1,0 +1,58 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Range</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class='ion-padding' >
+  <ion-range labelPlacement="start" [(ngModel)]="valor">
+    <div slot="label">Label at the Start: ({{valor}})</div>
+  </ion-range>
+  
+  <br />
+  
+  <ion-range labelPlacement="end">
+    <div slot="label">Label at the End</div>
+  </ion-range>
+  
+  <br />
+  
+  <ion-range labelPlacement="fixed">
+    <div slot="label">Fixed Width Label</div>
+  </ion-range>
+
+  <br>
+
+  <ion-range aria-label="Temperature">
+    <ion-icon slot="start" name="snow-outline"></ion-icon>
+    <ion-icon slot="end" name="sunny-outline"></ion-icon>
+  </ion-range>
+
+  <br>
+
+  <p>Pin:</p>
+  <ion-range [(ngModel)]="valorPin" aria-label="Range with pin" [pin]="true" [pinFormatter]="pinFormatter">
+    <div slot="label">Valor: {{valorPin}}</div>
+  </ion-range>
+
+  <p>Snapping e Ticks:</p>
+  <ion-range aria-label="Range with ticks" [ticks]="true" [snaps]="true" [min]="0" [max]="10"></ion-range>
+
+  <p>Capturando início e fim:</p>
+  <ion-range
+    [pin]="true"
+    aria-label="Range with knob events"
+    (ionKnobMoveStart)="onIonKnobMoveStart($event)"
+    (ionKnobMoveEnd)="onIonKnobMoveEnd($event)"
+  ></ion-range>
+  <div>
+    <ion-label>Valor Inicial: {{ moveStart }}</ion-label>
+  </div>
+  <div>
+    <ion-label>Valor Final: {{ moveEnd }}</ion-label>
+  </div>
+
+</ion-content>
