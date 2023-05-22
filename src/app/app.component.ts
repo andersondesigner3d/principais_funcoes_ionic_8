@@ -35,6 +35,7 @@ export class AppComponent{
     { title: 'Loading e Spinners', url: '/loading', icon: 'cube' },
     { title: 'Radio', url: '/radio', icon: 'cube' },
     { title: 'Range', url: '/range', icon: 'cube' },
+    { title: 'Refresher', url: '/refresher', icon: 'cube' },
   ];
   
   
