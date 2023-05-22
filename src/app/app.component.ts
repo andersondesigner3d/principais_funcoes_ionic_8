@@ -39,9 +39,16 @@ export class AppComponent{
     { title: 'Reorder', url: '/reorder', icon: 'cube' },
   ];
   
-  
   darkMode = false;
   public menuType: string = 'overlay';
+
+  public results = [...this.appPages];
+
+  handleInput(event:any) {
+    const query = event.target.value.toLowerCase();
+    //this.results = this.appPages.filter((d) => d.toLowerCase().indexOf(query) > -1);
+    this.results = this.appPages.filter((d) => d.title.toLowerCase().indexOf(query.toLowerCase()) > -1);
+  }
 
   constructor(private storage: Storage) {
   }
@@ -61,6 +68,8 @@ export class AppComponent{
     this.darkMode = !this.darkMode;
     this.storage.set('darkmode', this.darkMode);
   }
+
+  
 
 }
 
