@@ -39,6 +39,7 @@ export class AppComponent{
     { title: 'Reorder', url: '/reorder', icon: 'cube' },
     { title: 'Segment', url: '/segment', icon: 'cube' },
     { title: 'Select', url: '/select', icon: 'cube' },
+    { title: 'Toast', url: '/toast', icon: 'cube' },
   ];
   
   darkMode = false;

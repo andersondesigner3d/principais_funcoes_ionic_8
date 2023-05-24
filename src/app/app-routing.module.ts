@@ -50,7 +50,8 @@ const routes: Routes = [
   {
     path: 'content',
     loadChildren: () => import('./pages/content/content.module').then( m => m.ContentPageModule)
-  },  {
+  },
+  {
     path: 'datetime',
     loadChildren: () => import('./pages/datetime/datetime.module').then( m => m.DatetimePageModule)
   },
@@ -137,7 +138,11 @@ const routes: Routes = [
   {
     path: 'select',
     loadChildren: () => import('./pages/select/select.module').then( m => m.SelectPageModule)
+  },   {
+    path: 'toast',
+    loadChildren: () => import('./pages/toast/toast.module').then( m => m.ToastPageModule)
   }
+
 
 ];
 
