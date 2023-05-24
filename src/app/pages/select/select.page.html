@@ -1,0 +1,77 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Select</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class='ion-padding'>
+  <h1>Valor selecionado: {{valor}}</h1>
+  <ion-list>
+    <ion-item>
+      <p>Padrão:</p>
+      <ion-select [(ngModel)]="valor" aria-label="fruit" placeholder="Select fruit">
+        <ion-select-option value="apples">Apples</ion-select-option>
+        <ion-select-option value="oranges">Oranges</ion-select-option>
+        <ion-select-option value="bananas">Bananas</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <div class="linha-horizontal"></div>
+  <ion-list>
+    <ion-item>
+      <p>Action Sheet:</p>
+      <ion-select [(ngModel)]="valor" aria-label="Fruit" interface="action-sheet" placeholder="Select fruit">
+        <ion-select-option value="apples">Apples</ion-select-option>
+        <ion-select-option value="oranges">Oranges</ion-select-option>
+        <ion-select-option value="bananas">Bananas</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <div class="linha-horizontal"></div>
+  <ion-list>
+    <ion-item>
+      <p>Popover:</p>
+      <ion-select [(ngModel)]="valor" aria-label="Fruit" interface="popover" placeholder="Select fruit">
+        <ion-select-option value="apples">Apples</ion-select-option>
+        <ion-select-option value="oranges">Oranges</ion-select-option>
+        <ion-select-option value="bananas">Bananas</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <div class="linha-horizontal"></div>
+  <ion-list>
+    <ion-item>
+      <p>Multiple Selection:</p>
+      <ion-select [(ngModel)]="valor" aria-label="Fruit" placeholder="Select all fruits that apply" [multiple]="true">
+        <ion-select-option value="apples">Apples</ion-select-option>
+        <ion-select-option value="oranges">Oranges</ion-select-option>
+        <ion-select-option value="bananas">Bananas</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <div class="linha-horizontal"></div>
+  <ion-list>
+    <ion-item>
+      <p>Responding to Interaction</p>
+      <ion-select
+        aria-label="Fruit"
+        placeholder="Select fruit"
+        (ionChange)="handleChange($event)"
+        (ionCancel)="pushLog('ionCancel fired')"
+        (ionDismiss)="pushLog('ionDismiss fired')"
+      >
+        <ion-select-option value="apples">Apples</ion-select-option>
+        <ion-select-option value="oranges">Oranges</ion-select-option>
+        <ion-select-option value="bananas">Bananas</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <div class="ion-padding">
+    <p *ngFor="let log of logs">{{ log }}</p>
+  </div>
+  <div class="linha-horizontal"></div>
+  
+</ion-content>

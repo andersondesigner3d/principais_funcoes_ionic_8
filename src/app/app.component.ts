@@ -38,6 +38,7 @@ export class AppComponent{
     { title: 'Refresher', url: '/refresher', icon: 'cube' },
     { title: 'Reorder', url: '/reorder', icon: 'cube' },
     { title: 'Segment', url: '/segment', icon: 'cube' },
+    { title: 'Select', url: '/select', icon: 'cube' },
   ];
   
   darkMode = false;

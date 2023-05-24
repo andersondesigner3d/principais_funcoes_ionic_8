@@ -133,6 +133,10 @@ const routes: Routes = [
   {
     path: 'segment',
     loadChildren: () => import('./pages/segment/segment.module').then( m => m.SegmentPageModule)
+  },
+  {
+    path: 'select',
+    loadChildren: () => import('./pages/select/select.module').then( m => m.SelectPageModule)
   }
 
 ];
