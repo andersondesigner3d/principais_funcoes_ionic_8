@@ -42,6 +42,7 @@ export class AppComponent{
     { title: 'Toast', url: '/toast', icon: 'cube' },
     { title: 'Toggle', url: '/toggle', icon: 'cube' },
     { title: 'Toobar', url: '/toobar', icon: 'cube' },
+    { title: 'Typography', url: '/typography', icon: 'cube' },
   ];
   
   darkMode = false;

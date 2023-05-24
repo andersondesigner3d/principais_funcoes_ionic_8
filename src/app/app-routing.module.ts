@@ -149,6 +149,10 @@ const routes: Routes = [
   {
     path: 'toobar',
     loadChildren: () => import('./pages/toobar/toobar.module').then( m => m.ToobarPageModule)
+  },
+  {
+    path: 'typography',
+    loadChildren: () => import('./pages/typography/typography.module').then( m => m.TypographyPageModule)
   }
 
 
