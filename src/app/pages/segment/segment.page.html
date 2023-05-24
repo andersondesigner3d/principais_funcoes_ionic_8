@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Segment</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class='ion-padding'>
+  <ion-segment (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="segment1" checked>
+      Segmento 1
+    </ion-segment-button>
+    <ion-segment-button value="segment2">
+      Segmento 2
+    </ion-segment-button>
+  </ion-segment>
+
+  <div *ngIf="selectedSegment === 'segment1'">
+    <h2>Conteúdo do Segmento 1</h2>
+    <p>Este é o conteúdo exibido quando o Segmento 1 está selecionado.</p>
+  </div>
+
+  <div *ngIf="selectedSegment === 'segment2'">
+    <h2>Conteúdo do Segmento 2</h2>
+    <p>Este é o conteúdo exibido quando o Segmento 2 está selecionado.</p>
+  </div>
+</ion-content>

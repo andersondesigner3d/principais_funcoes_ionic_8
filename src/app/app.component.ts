@@ -37,6 +37,7 @@ export class AppComponent{
     { title: 'Range', url: '/range', icon: 'cube' },
     { title: 'Refresher', url: '/refresher', icon: 'cube' },
     { title: 'Reorder', url: '/reorder', icon: 'cube' },
+    { title: 'Segment', url: '/segment', icon: 'cube' },
   ];
   
   darkMode = false;
