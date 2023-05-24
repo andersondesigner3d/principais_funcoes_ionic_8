@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Toast</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class='ion-padding'>
+  <ion-toggle [(ngModel)]="email" (ionChange)="toggleEmailChanged()" labelPlacement="start">Do you want to receive news emails?</ion-toggle><br /><br />
+  <ion-toggle [(ngModel)]="expertise" labelPlacement="end">Do you have expertise?</ion-toggle><br /><br />
+  <ion-toggle [(ngModel)]="opinion" labelPlacement="fixed">Do yoy think Angular is better than React?</ion-toggle><br /><br />
+  <div class="linha-horizontal"></div>
+  <p>Email: {{email}}</p>
+  <p>Expertise: {{expertise}}</p>
+  <p>Opinion: {{opinion}}</p>
+</ion-content>

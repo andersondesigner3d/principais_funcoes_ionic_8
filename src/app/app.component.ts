@@ -40,6 +40,7 @@ export class AppComponent{
     { title: 'Segment', url: '/segment', icon: 'cube' },
     { title: 'Select', url: '/select', icon: 'cube' },
     { title: 'Toast', url: '/toast', icon: 'cube' },
+    { title: 'Toggle', url: '/toggle', icon: 'cube' },
   ];
   
   darkMode = false;

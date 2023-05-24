@@ -141,6 +141,10 @@ const routes: Routes = [
   },   {
     path: 'toast',
     loadChildren: () => import('./pages/toast/toast.module').then( m => m.ToastPageModule)
+  },
+  {
+    path: 'toggle',
+    loadChildren: () => import('./pages/toggle/toggle.module').then( m => m.TogglePageModule)
   }
 
 
