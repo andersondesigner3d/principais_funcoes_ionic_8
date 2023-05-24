@@ -145,6 +145,10 @@ const routes: Routes = [
   {
     path: 'toggle',
     loadChildren: () => import('./pages/toggle/toggle.module').then( m => m.TogglePageModule)
+  },
+  {
+    path: 'toobar',
+    loadChildren: () => import('./pages/toobar/toobar.module').then( m => m.ToobarPageModule)
   }
 
 
