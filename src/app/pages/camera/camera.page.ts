@@ -10,8 +10,10 @@ import { PhotoService } from '../../services/photo.service';
 export class CameraPage implements OnInit {
   
   constructor(public photoService: PhotoService) { }
+  
 
-  ngOnInit() {
+  async ngOnInit() {
+    await this.photoService.loadSaved();
   }
 
   addPhotoToGallery() {
