@@ -42,13 +42,15 @@
                 <ion-label>Componentes Nativos</ion-label>
               </ion-item>
               <div class="ion-padding" slot="content">
-               Em breve...
-                <!-- <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+
+                <ion-searchbar placeholder="Buscar" [debounce]="1000" (ionInput)="handleNativeInput($event)"></ion-searchbar>
+               
+                <ion-menu-toggle auto-hide="false" *ngFor="let p of nativeResults; let i = index">
                   <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
                     <ion-icon aria-hidden="true" slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
                     <ion-label>{{ p.title }}</ion-label>
                   </ion-item>
-                </ion-menu-toggle> -->
+                </ion-menu-toggle>
 
               </div>
             </ion-accordion>

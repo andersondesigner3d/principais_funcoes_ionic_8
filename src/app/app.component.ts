@@ -43,6 +43,9 @@ export class AppComponent{
     { title: 'Toggle', url: '/toggle', icon: 'cube' },
     { title: 'Toobar', url: '/toobar', icon: 'cube' },
     { title: 'Typography', url: '/typography', icon: 'cube' },
+  ];
+
+  public appNativePages = [
     { title: 'Camera', url: '/camera', icon: 'cube' },
   ];
   
@@ -50,11 +53,17 @@ export class AppComponent{
   public menuType: string = 'overlay';
 
   public results = [...this.appPages];
+  public nativeResults = [...this.appNativePages];
 
   handleInput(event:any) {
     const query = event.target.value.toLowerCase();
     //this.results = this.appPages.filter((d) => d.toLowerCase().indexOf(query) > -1);
     this.results = this.appPages.filter((d) => d.title.toLowerCase().indexOf(query.toLowerCase()) > -1);
+  }
+
+  handleNativeInput(event:any) {
+    const query = event.target.value.toLowerCase();
+    this.nativeResults = this.appNativePages.filter((d) => d.title.toLowerCase().indexOf(query.toLowerCase()) > -1);
   }
 
   constructor(private storage: Storage) {
