@@ -47,6 +47,7 @@ export class AppComponent{
 
   public appNativePages = [
     { title: 'Camera', url: '/camera', icon: 'cube' },
+    { title: 'Geolocalização', url: '/geolocalizacao', icon: 'cube' },
   ];
   
   darkMode = false;

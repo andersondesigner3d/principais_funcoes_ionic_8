@@ -153,9 +153,14 @@ const routes: Routes = [
   {
     path: 'typography',
     loadChildren: () => import('./pages/typography/typography.module').then( m => m.TypographyPageModule)
-  },  {
+  },
+  {
     path: 'camera',
     loadChildren: () => import('./pages/camera/camera.module').then( m => m.CameraPageModule)
+  },
+  {
+    path: 'geolocalizacao',
+    loadChildren: () => import('./pages/geolocalizacao/geolocalizacao.module').then( m => m.GeolocalizacaoPageModule)
   }
 
 
