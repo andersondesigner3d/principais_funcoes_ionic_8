@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">todas_funcoes_ionic8</string>
-    <string name="title_activity_main">todas_funcoes_ionic8</string>
+    <string name="app_name">Principais_funcoes_Ionic_8</string>
+    <string name="title_activity_main">Principais_funcoes_Ionic_8</string><!-- nome do app na tela do smartphone-->
     <string name="package_name">io.natalgamestudio.todas_funcoes_ionic_8</string>
     <string name="custom_url_scheme">io.natalgamestudio.todas_funcoes_ionic_8</string>
 </resources>
