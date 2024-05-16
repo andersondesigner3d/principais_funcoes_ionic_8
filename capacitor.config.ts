@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'todas_funcoes_ionic7',
+  appId: 'io.natalgamestudio.todas_funcoes_ionic_8',
+  appName: 'todas_funcoes_ionic_8',
   webDir: 'www',
   bundledWebRuntime: false
 };

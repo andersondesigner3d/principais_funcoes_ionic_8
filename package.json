@@ -1,7 +1,7 @@
 {
   "name": "devdacticImages",
-  "version": "0.0.1",
-  "author": "Ionic Framework",
+  "version": "0.0.2",
+  "author": "Anderson Rocha",
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
