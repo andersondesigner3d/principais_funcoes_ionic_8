@@ -9,6 +9,7 @@ import { Storage } from '@ionic/storage-angular';
 export class AppComponent{
   public appPages = [
     { title: 'Index', url: '/folder/index', icon: 'home' },
+    { title: 'Instalação', url: '/instalacao', icon: 'cube' },
     { title: 'Action Sheet', url: '/action-sheet', icon: 'cube' },
     { title: 'Accordion', url: '/accordion', icon: 'cube' },
     { title: 'Alert', url: '/alert', icon: 'cube' },

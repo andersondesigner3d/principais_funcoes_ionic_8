@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Instalação</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class='ion-padding' >
+  <div class="ion-text-justify">
+    <p>Para instalar este app em seu pc e poder estudar suas funções siga os seguintes passos:</p>
+    <ul>
+      <li>Clone o projeto do <a href="https://github.com/andersondesigner3d/principais_funcoes_ionic_8" target="_blank">GitHub</a>.</li>
+      <li>Abra a pasta do projeto com o Visual Studio Code.</li>
+      <li>No VS Code use o atalho de abrir o prompt de comando: ctrl + shift + '</li>
+      <li>Intale o node modules com o comando: npm install</li>
+      <li>Compile o projeto com o comando: ionic build</li>
+      <li>Copie a compilação para o projeto com o comando: ionic cap copy</li>
+      <li>Sincronize todos os plugins com o comando: ionic cap sync</li>
+      <li>Instale o Android Studio mais recente que tiver disponível.</li>
+      <li>Abra o projeto no Android Studio com o comando: ionic cap open android</li>
+      <li>Conecte seu Smatphone com um cabo de dados no pc, libere o modo desenvolvedor no seu smartphone e deixe a conexão no modo ancoragem USB</li>
+      <li>Instale para teste em tempo real no seu smartphone com o comando: ionic cap run android -l --external</li>
+      <li>Seu Smartphone devera aparecer no prompt de comando, selecione ele e digite enter.</li>
+      <li>O Ionic deverá oferecer alguns servidores (IPs) pra você rodar o app em modo Live Reload (tempo real) enquanto programa, escolha algum e espere compilar no seu Smartphone.</li>
+      <li>Se tudo der certo o app abrirá no seu smartphone e tudo que você mudar no código deverá mudar tmb no app em tempo real.</li>
+    </ul>
+  </div>  
+
+</ion-content>

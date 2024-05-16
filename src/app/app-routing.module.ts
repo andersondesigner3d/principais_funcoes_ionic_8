@@ -12,6 +12,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/index/folder.module').then( m => m.FolderPageModule)
   },
   {
+    path: 'instalacao',
+    loadChildren: () => import('./pages/instalacao/instalacao.module').then( m => m.InstalacaoPageModule)
+  },
+  {
     path: 'action-sheet',
     loadChildren: () => import('./pages/action-sheet/action-sheet.module').then( m => m.ActionSheetPageModule)
   },
@@ -161,7 +165,12 @@ const routes: Routes = [
   {
     path: 'geolocalizacao',
     loadChildren: () => import('./pages/geolocalizacao/geolocalizacao.module').then( m => m.GeolocalizacaoPageModule)
+  },
+  {
+    path: 'instalacao',
+    loadChildren: () => import('./pages/instalacao/instalacao.module').then( m => m.InstalacaoPageModule)
   }
+
 
 
 
