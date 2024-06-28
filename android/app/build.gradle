@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace "io.natalgamestudio.todas_funcoes_ionic_8" //url do app no google play
-    compileSdkVersion 34
+    namespace "io.natalgamestudio.principais_funcoes_ionic_8"
+    compileSdk rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "io.natalgamestudio.todas_funcoes_ionic_8" //url do app no google play
+        applicationId "io.natalgamestudio.principais_funcoes_ionic_8"
         minSdkVersion rootProject.ext.minSdkVersion
-        targetSdkVersion 34
-        versionCode 4 //mude a versao pra build aqui
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {
