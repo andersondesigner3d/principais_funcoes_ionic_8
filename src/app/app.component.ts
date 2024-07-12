@@ -44,6 +44,7 @@ export class AppComponent{
     { title: 'Toggle', url: '/toggle', icon: 'cube' },
     { title: 'Toobar', url: '/toobar', icon: 'cube' },
     { title: 'Typography', url: '/typography', icon: 'cube' },
+    { title: 'Api REST', url: '/api-rest', icon: 'cube' },
   ];
 
   public appNativePages = [
