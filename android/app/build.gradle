@@ -7,7 +7,7 @@ android {
         applicationId "io.natalgamestudio.todas_funcoes_ionic_8"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 3
+        versionCode 3 //mudar isto aqui a cada versão no googleplay
         versionName "1.0.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {
