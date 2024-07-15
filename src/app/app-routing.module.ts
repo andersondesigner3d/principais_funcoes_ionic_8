@@ -172,6 +172,10 @@ const routes: Routes = [
   },  {
     path: 'api-rest',
     loadChildren: () => import('./pages/api-rest/api-rest.module').then( m => m.ApiRestPageModule)
+  },
+  {
+    path: 'formulario',
+    loadChildren: () => import('./pages/formulario/formulario.module').then( m => m.FormularioPageModule)
   }
 
 
