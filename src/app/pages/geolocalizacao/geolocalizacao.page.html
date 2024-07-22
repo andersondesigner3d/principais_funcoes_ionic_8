@@ -9,8 +9,14 @@
 </ion-header>
 
 <ion-content class='ion-padding' >
-  <p>Latitude: {{latitude}}</p>
-  <p>Longitude: {{longitude}}</p>
-  
-
+  <div *ngIf="latitude === null && longitude === null; else showLocation">
+    <p>Buscando satélites...</p>
+    <ion-progress-bar type="indeterminate"></ion-progress-bar>
+  </div>
+  <ng-template #showLocation>
+    <div>
+      <p>Latitude: {{ latitude }}</p>
+      <p>Longitude: {{ longitude }}</p>
+    </div>
+  </ng-template>
 </ion-content>
