@@ -9,7 +9,7 @@
 </ion-header>
 
 <ion-content class='ion-padding' >
-  <div *ngIf="latitude === null && longitude === null; else showLocation">
+  <div *ngIf="latitude === null || longitude === null || latitude === 0 || longitude === 0; else showLocation">
     <p>Buscando satélites...</p>
     <ion-progress-bar type="indeterminate"></ion-progress-bar>
   </div>
