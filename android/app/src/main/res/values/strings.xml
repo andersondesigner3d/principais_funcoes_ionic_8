@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Principais_funcoes_ionic_8</string>
-    <string name="title_activity_main">Principais_funcoes_ionic_8</string>
-    <string name="package_name">io.natalgamestudio.principais_funcoes_ionic_8</string>
-    <string name="custom_url_scheme">io.natalgamestudio.principais_funcoes_ionic_8</string>
+    <string name="app_name">Principais Funcoes Ionic 8</string>
+    <string name="title_activity_main">Principais Funcoes Ionic 8</string>
+    <string name="package_name">io.natalgamestudio.todas_funcoes_ionic_8</string>
+    <string name="custom_url_scheme">io.natalgamestudio.todas_funcoes_ionic_8</string>
 </resources>

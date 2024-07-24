@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace "io.natalgamestudio.principais_funcoes_ionic_8"
+    namespace "io.natalgamestudio.todas_funcoes_ionic_8"
     compileSdk rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "io.natalgamestudio.principais_funcoes_ionic_8"
+        applicationId "io.natalgamestudio.todas_funcoes_ionic_8"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 5 //versão da build aqui
-        versionName "1.0.5"
+        versionCode 9//versão
+        versionName "1.0.9"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {
              // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.
