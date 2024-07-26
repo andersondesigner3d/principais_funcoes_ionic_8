@@ -9,8 +9,8 @@ import { AlertController } from '@ionic/angular';
 })
 export class GeolocalizacaoPage implements OnInit {
 
-  public latitude: number = 0;
-  public longitude: number = 0;
+  public latitude: any = 0;
+  public longitude: any = 0;
 
   constructor(private alertController: AlertController) { }
 
