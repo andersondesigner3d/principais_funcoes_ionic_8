@@ -89,8 +89,6 @@ export class AppComponent{
     this.storage.set('darkmode', this.darkMode);
   }
 
-  
-
 }
 
 

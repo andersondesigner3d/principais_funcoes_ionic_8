@@ -1,5 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { App } from '@capacitor/app';
 
 @Component({
   selector: 'app-folder',
@@ -9,9 +10,18 @@ import { ActivatedRoute } from '@angular/router';
 export class FolderPage implements OnInit {
   public folder!: string;
   private activatedRoute = inject(ActivatedRoute);
-  constructor() {}
+  appVersion: string = '';
+  constructor() {
+    this.getAppVersion();
+  }  
 
   ngOnInit() {
-    this.folder = this.activatedRoute.snapshot.paramMap.get('id') as string;
+    this.folder = this.activatedRoute.snapshot.paramMap.get('id') as string;    
   }
+
+  async getAppVersion() {
+    const info = await App.getInfo();
+    this.appVersion = info.version;
+  }
+  
 }
